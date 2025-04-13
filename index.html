@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---font awe-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!---- connecting css ----->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/03ed4617-0516-47f8-98bb-a729cab9ca1c/webchat/v2.1/config.js"></script> -->
+
+    <!-- Your JavaScript (should be after GSAP) -->
+    <script src="script.js" defer></script>
+
+
+    <title>EVENTIFY</title>
+</head>
+<body>
+
+    <header class="head">
+       
+        <a href="" class="logo" ><i class="fas fa-heart"></i> EVENTIFY</span><i class = "fas fa-heart"></i></a>
+        <nav class="navbar">
+<a href="#home">Home</a>
+<a href="#service">Service</a>
+<a href="#vendor">Vendor</a>
+<a href="#venue">Venue</a>
+<a href="#invite"></a>
+<!-- <a href="#photography"></a>
+<a href="#vr">AR Demo</a> -->
+<a href="#contact">Contact</a>
+
+        </nav>
+        <div id="menu-bar"><i class ="fas fa-bars"></i></div>
+    </header>
+
+<!----------HOME SECTION--------->
+
+<section id="home" class="home" home>
+    <form action="#">
+        <div class="search-box">
+            <h1>PLAN YOUR MODREN EVENTS</h1>
+            <p>FINDS THE BEST BUDGET FRIENDLY EVENTS BOOKING</p>
+            <!-----option 1-->
+            <select type="text" class="search-field">
+                <option disabled selected>Select Vendor type </option>
+                <option value="wedding Venues">Wedding Venues</option>
+                <option value="Wedding Photographer">Wedding Photographer</option>
+                <option value="Wedding Decor">Wedding Decor</option>
+                <option value="Wedding Catering">Wedding Catering</option>
+                <option value="EM">Event manager</option>
+            </select>
+             <!-----option 2-->
+            <select type="text" class="search-field">
+                <option disabled selected>City </option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="mysore">mysore</option>
+                <option value="chikkamangaluru">chikkamangaluru</option>
+                <option value="madakeri">madakeri</option>
+                <option value="mangalore">mangalore</option>
+            </select>
+            <button class="btn">Search</button>
+        </div>
+    </form>
+</section>
+<!----------SERVICE SECTION--------->
+<section class="service" id="service">
+    <div class="title">
+        <h1><span>S</span>ervice</h1>
+    </div>
+    <div class="services-row">
+        <div class="services-col">
+            <!-- <i class="fas fa-book-open"></i> -->
+            <h2>Invitation </h2>
+            <p>Get the best invitation cards for your Events</p>
+            <!-- <img src="ASSET/i1.jpg" alt=""> -->
+            <button class="service-button" onclick="location.href='inivite.html';">Generate</button>
+
+        </div>
+
+        <div class="services-col1">
+            <!-- <i class="fas fa-camera"></i> -->
+            <h2>Photography & Video</h2>
+            <p>Get best ever Photography</p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+
+        <div class="services-col2">
+            <!-- <i class="fas fa-brush"></i> -->
+            <h2>Decoration</h2>
+            <p>Get best ever decoration</p>
+            <button class="service-button" onclick="location.href='deco.html';">Generate</button>
+        </div>
+
+        <div class="services-col3">
+            <!-- <i class="fab fa-pagelines"></i> -->
+            <h2>Food & Catering</h2>
+            <p>Get best ever fingure liking good food show</p>
+            <button class="service-button" onclick="location.href='Food.html';">Generate</button>
+        </div>
+
+        <div class="services-col4">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>Dance</h2>
+            <p>Get best ever customised musics</p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        <div class="services-col5">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>Singing</h2>
+            <p>Get best ever singers </p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        <div class="services-col6">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>Album printing</h2>
+            <p>Get best ever singers </p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        <div class="services-col7">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>Makeup artist</h2>
+            <p>Get best ever singers </p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        <div class="services-col8">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>costume designer</h2>
+            <p>Get best ever designers </p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        <div class="services-col9">
+            <!-- <i class="fas fa-birthday-cake"></i> -->
+            <h2>instrumentalist </h2>
+            <p>Get best ever singers </p>
+            <button class="service-button" onclick="location.href='photosection.html';">Generate</button>
+        </div>
+        
+
+
+    </div>
+</section>
+
+<!-----------------------------VENDOR-->
+<section class="vendor" id ="vendor">
+<div class="title">
+    <h1> <span>D</span>istination <span>W</span>edding Packages</h1>
+</div>
+<div class="vendor-list">
+ <!-- 1 -->
+    <div class="vendor-row">
+        <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+    <img src="ASSET/ooty.jpg" alt="">
+    <h2>Goa </h2>
+    <p>includes food,stay,travel,photo&decoration</p>
+    <h3>Rs.10,00,000 onwards</h3>
+    </div>
+<!-- 2 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/manali.jpg" alt="">
+<h2>Manali </h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.20,00,000 onwards</h3>
+</div>
+<!-- 3 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/honnavar.jpg" alt="">
+<h2>Honavara</h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.5,00,000 onwards</h3>
+</div>
+<!-- 4 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/bali.jpg" alt="">
+<h2>Bali</h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.50,00,000 onwards</h3>
+</div>
+<!-- 5 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/paris.jpg" alt="">
+<h2>Paris </h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.50,00,000 onwards</h3>
+</div>
+<!-- 6 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/munnar.jpg" alt="">
+<h2>Munnar</h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.10,00,000 onwards</h3>
+</div>
+<!-- 7 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/ooty.jpg" alt="">
+<h2>Ooty</h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.10,00,000 onwards</h3>
+</div>
+<!-- 8 -->
+<div class="vendor-row">
+    <div class="rate">4.5&nbsp; <i class="fas fa-star"></i></div>
+<img src="ASSET/coorg1.jpg" alt="">
+<h2>Coorg</h2>
+<p>includes food,stay,travel,photo&decoration</p>
+<h3>Rs.10,00,000 onwards</h3>
+</div>
+
+</div>
+
+</section>
+
+<!------------------------------------ Venue------------------------------------->
+<section class="venue" id="venue">
+
+    <div class="title">
+        <h1><span>V</span>enues</h1>
+        <div class="venue-list">
+            <!-- 1 -->
+            <div class="venue-box">
+                <img src="ASSET/lah.jpg" alt="">
+                <div class="venue-info">
+                    <h2>LADAKH</h2>
+                    <p>Eventify</p>
+                    <button class="btn">More info</button>
+                </div>
+            </div>
+<!-- 2 -->
+<div class="venue-box">
+    <img src="ASSET/kolar.jpg" alt="">
+    <div class="venue-info">
+        <h2>KOLAR</h2>
+        <p>Eventify</p>
+        <button class="btn">More info</button>
+    </div>
+</div>
+ <!-- 3 -->
+ <div class="venue-box">
+    <img src="ASSET/chikka.jpg" alt="">
+    <div class="venue-info">
+        <h2>CHIKKAMANAGALURU</h2>
+        <p>Eventify</p>
+        <button class="btn">More info</button>
+    </div>
+</div>
+  <!-- 4 -->
+  <div class="venue-box">
+    <img src="ASSET/bangalore.jpg" alt="">
+    <div class="venue-info">
+        <h2>BANGALORE</h2>
+        <p>Eventify</p>
+        <button class="btn">More info</button>
+    </div>
+</div>
+   <!-- 5 -->
+   <div class="venue-box">
+    <img src="ASSET/goa.jpg" alt="">
+    <div class="venue-info">
+        <h2>GOA</h2>
+        <p>Eventify</p>
+        <button class="btn">More info</button>
+    </div>
+</div>
+    <!-- 6 -->
+    <div class="venue-box">
+        <img src="ASSET/mysore.jpg" alt="">
+        <div class="venue-info">
+            <h2>Mysore</h2>
+            <p>Eventify</p>
+            <button class="btn">More info</button>
+        </div>
+    </div>
+    <!-- end -->
+        </div>
+    </div>
+</section>
+
+
+<!-- AR -->
+<section id="vr" class="vr">
+    <div class="title">
+        <h1><span>A</span>ugmented <span>R</span>eality</h1>
+        <p>Experience immersive virtual reality and augmented reality experiences for your events.</p>
+    </div>
+    
+    
+    <div class="vr-container">
+
+         <!-- AR Camera Access -->
+    <div class="camera-access">
+        <h2>Access Your Camera for AR</h2>
+        <p>Click the button below to use your camera and experience  AR demo.</p>
+        <!-- <button class="btn" onclick="AR.html">Start AR</button> -->
+        <button class="btn" onclick="location.href='ar.html';">Start AR</button>
+
+        <div id="camera-view" style="display:none; margin-top:20px; position: relative;">
+            <video id="camera-stream" autoplay playsinline style="width: 100%; height: 500px;"></video>
+            <canvas id="overlay" style="position: absolute; top: 0; left: 0;"></canvas>
+        </div>
+
+        <!-- Sliding list of objects
+<div id="sliding-panel">
+    <button onclick="addObject('balloon')">Add Balloon</button>
+    <button onclick="addObject('table')">Add Table</button>
+    <button onclick="addObject('curtain')">Add Curtain</button>
+    <button onclick="removeObject()">Remove Object</button>
+</div> -->
+
+<!--
+  
+        <div class="vr-item">
+            <h2>AR Wedding Experience</h2>
+            <p>Step into the virtual world of a wedding experience with 360° views.</p>
+            <h3>Price: ₹60,000</h3>
+            <button class="btn" id="try-now-vr">Try Now</button>
+        </div>
+
+        
+        <div class="vr-item">
+            <h2>360° AR Event</h2>
+            <p>Experience your event from any angle with our 360° AR technology.</p>
+            <h3>Price: ₹45,000</h3>
+            <button class="btn" id="try-now-vr2">Try Now</button>
+        </div>
+
+        
+        <div class="vr-item">
+            <h2>AR 3D Experience</h2>
+            <p>Explore an immersive 3D virtual environment for your event.</p>
+            <h3>Price: ₹75,000</h3>
+            <button class="btn" id="try-now-vr3">Try Now</button>
+        </div> -->
+    </div>
+    </div>
+</section>
+
+
+
+
+<!-- end -->
+
+
+
+<!--  footer  section  -->
+  <footer id="contact">
+
+    <div class="container">
+       
+        <div class="f-container">
+            <h2>EVENTIFY - customise your wedding </h2>
+            <p>Plan your wedding with us eventify is an Indian platform!</p>
+            <div>
+                <button class="btn">Register As A vendor</button>
+
+            </div>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pintrest"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <h2>Our Location</h2>
+            <a href="#"><i class="fas fa-angle-right"></i>Bangalore</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Newyork </a>
+            <a href="#"><i class="fas fa-angle-right"></i>UB-city</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Mangalore </a>
+            <a href="#"><i class="fas fa-angle-right"></i>Uttarpradesh</a>
+        </div>
+        <div class="f-container">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" placeholder="Enter your email">
+            <button class="btn">Subscribe</button>
+        </div>
+    </div>
+  </footer>
+</body>
+<script>
+    let menu = document.querySelector('#menu-bar');
+    let head = document.querySelector('.head .navbar');
+    menu.onclick = () => 
+    {
+        head.classList.toggle('active');
+    };
+
+window.onscroll = () =>
+{
+    head.classList.remove('active');
+    if(window.screenY > 60)
+    {
+        document.querySelector('#menu-bar').classList.add('active');
+    }
+    else
+    {
+        document.querySelector('#menu-bar').classList.remove('active');
+    }
+}
+
+</script>
+</html>
