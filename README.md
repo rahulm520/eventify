@@ -1,5 +1,9 @@
 # 🎉 EVENTIFY – Smart Event Planning Platform
 
+
+https://github.com/user-attachments/assets/0058c7f1-f6fc-485f-b1f6-0cba4c6207fd
+
+
 **EVENTIFY** is a web and mobile-based event planning platform that leverages **Artificial Intelligence (AI)** and **Augmented Reality (AR)** to revolutionize how people plan events. Whether it's a wedding, birthday, or corporate gathering, EVENTIFY simplifies, personalizes, and enhances the planning experience.
 
 ---
